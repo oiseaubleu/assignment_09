@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TwitterClone</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" charset="utf-8">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+  </head>
+
+  <body>
+     <header>
+         <%= image_tag 'header.png', class: 'header' %>
+
+        <h1>Posts🐦💨</h1>
+        <p id="notice"><%= notice %></p>            
+        </header>
+    <%= yield %>
+     <footer>
+      <p class="footer_copyright">© うまねこ. All RIGHTS RESERVED.</p>
+       <%= image_tag 'header.png', class: 'header' %>
+    </footer>
+  </body>
+</html>
